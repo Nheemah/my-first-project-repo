@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailor-Made Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bespoke Tailoring</h1>
+    <p>Custom-Fitted Elegance for You</p>
+  </header>
+
+  <section class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow1">
+        <div class="slides" id="slides0">
+          <img src="./3 piece jacket shirt and pant.jpeg" alt="3 Piece">
+          <img src="./3 piece jacket shirt and pant back.jpeg" alt="3 Piece Back">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow1')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow1')">&#10095;</button>
+      </div>
+      <h2>3 Piece Waistcoat, Shirt, and Trouser</h2>
+      <p>$299</p>
+      <label>Size:
+        <select id="size1">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color1">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('3 Piece Waistcoat, Shirt, and Trouser', 299, 'size1', 'color1')">Customize & Add</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow2">
+        <div class="slides" id="slides1">
+          <img src="./vintage cargo shirt and trouser.jpeg" alt="Vintage Cargo">
+          <img src="./vintge cargo.jpeg" alt="Vintage Cargo 2">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow2')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow2')">&#10095;</button>
+      </div>
+      <h2>Vintage 2 Piece Cargo</h2>
+      <p>$299</p>
+      <label>Size:
+        <select id="size2">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color2">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Vintage 2 Piece Cargo', 299, 'size2', 'color2')">Customize & Add</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow3">
+        <div class="slides" id="slides2">
+          <img src="./agbada full.jpeg" alt="Agbada">
+          <img src="./abgada.jpeg" alt="Agbada Full">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow3')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow3')">&#10095;</button>
+      </div>
+      <h2>Classic Agbada Design</h2>
+      <p>$349</p>
+      <label>Size:
+        <select id="size3">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color3">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Classic Agbada Design', 349, 'size3', 'color3')">Customize & Add</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow4">
+        <div class="slides" id="slides3">
+          <img src="./kaftan dave.jpeg" alt="Kaftan">
+          <img src="./kaftan dave 2.jpeg" alt="Kaftan 2">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow4')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow4')">&#10095;</button>
+      </div>
+      <h2>Classic Kaftan</h2>
+      <p>$349</p>
+      <label>Size:
+        <select id="size4">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color4">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Classic Kaftan', 349, 'size4', 'color4')">Customize & Add</button>
+    </div>
+
+    <!-- Product 5 (3 Slides) -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow5">
+        <div class="slides" id="slides4">
+          <img src="./unique 3 piece wear.jpeg" alt="Unique 3 Piece">
+          <img src="./unique 3 piece wear side.jpeg" alt="Unique 3 Piece Side">
+          <img src="./unique 3 piece wear back.jpeg" alt="Unique 3 Piece Back">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow5')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow5')">&#10095;</button>
+      </div>
+      <h2>Unique 3 Piece Wear</h2>
+      <p>$349</p>
+      <label>Size:
+        <select id="size5">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color5">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Unique 3 Piece Wear', 349, 'size5', 'color5')">Customize & Add</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow6">
+        <div class="slides" id="slides5">
+          <img src="./bespoke kaftan.jpeg" alt="Unique Kaftan">
+          <img src="./bespoke kaftan.jpeg" alt="Unique Kaftan 2">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow6')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow6')">&#10095;</button>
+      </div>
+      <h2>Unique Kaftan Design</h2>
+      <p>$299</p>
+      <label>Size:
+        <select id="size6">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color6">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Unique Kaftan Design', 299, 'size6', 'color6')">Customize & Add</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow7">
+        <div class="slides" id="slides6">
+          <img src="./kaftan arole.jpeg" alt="Simple Kaftan">
+          <img src="./black kaftan.jpeg" alt="Simple Kaftan 2">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow7')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow7')">&#10095;</button>
+      </div>
+      <h2>Simple Design Kaftan</h2>
+      <p>$299</p>
+      <label>Size:
+        <select id="size7">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color7">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Green</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Simple Design Kaftan', 299, 'size7', 'color7')">Customize & Add</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+      <div class="slideshow-container" id="slideshow8">
+        <div class="slides" id="slides7">
+          <img src="./white agbada (2).jpeg" alt="Vintage Cargo">
+          <img src="./white agbada.jpeg" alt="Vintage Cargo 2">
+        </div>
+        <button class="prev" onclick="moveSlide(-1, 'slideshow8')">&#10094;</button>
+        <button class="next" onclick="moveSlide(1, 'slideshow8')">&#10095;</button>
+      </div>
+      <h2>Vintage Cargo</h2>
+      <p>$299</p>
+      <label>Size:
+        <select id="size8">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Color:
+        <select id="color8">
+          <option>Navy Blue</option><option>Black</option><option>Wine</option><option>Ash</option>
+        </select>
+      </label>
+      <button onclick="addToCart('Vintage Cargo', 299, 'size8', 'color8')">Customize & Add</button>
+    </div>
+
+  </section>
+
+  <!-- Cart Section -->
+  <div id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: $0</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

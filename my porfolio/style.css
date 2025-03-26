@@ -1,0 +1,90 @@
+/* General button styling */
+button {
+    background: #ff6600; /* Orange */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #e65c00; /* Darker orange */
+}
+
+/* Style for remove button */
+button.remove-btn {
+    background: red;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+button.remove-btn:hover {
+    background: darkred;
+}
+
+/* Style for cart container */
+#cart {
+    background: white;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Style for cart items */
+#cart-items li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Slideshow images */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+/* Navigation buttons for slideshow */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
